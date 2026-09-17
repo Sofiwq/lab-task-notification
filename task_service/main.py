@@ -11,7 +11,7 @@ logger = logging.getLogger("task_service")
 
 app = FastAPI(title="Task Service")
 
-NOTIFICATION_URL = "http://localhost:8002/api/webhooks/task_created"
+NOTIFICATION_URL = "http://localhost:8001/api/webhooks/task_created"
 
 tasks_db: dict[str, Task] = {}
 
